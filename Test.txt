@@ -1,2 +1,21 @@
-bambang kesukaan kita semua 
-iyaaa
+#include <iostream>
+
+using namespace std;
+
+void buat_akun() {
+    string jawaban, rek, akun, pass, konfirmasi, jawaban2;
+    int ngisiduid;
+    cout << "anda belum terdaftar di Bank SKADI" << endl;
+    cout << "=========apakah anda ingin mendaftarkan diri di Bank SKADI?========" << endl;
+    cout << "=====ketik iya untuk mendaftar dan tidak untuk tidak mendaftar=====" << endl;
+    cin >> jawaban;
+    if (jawaban == "iya") {
+        cout << "==silahkan buat username==" << endl;
+        cin >> akun;
+        cout << "==silahkan buat password baru==" << endl;
+        cin >> pass;
+        cout << "komfirmasi pembuatan akun dengan mengketik iya" << endl;
+        cin >> konfirmasi;
+        if (konfirmasi == "iya") {
+            cout << "====selamat akun anda telah terbuat====" << endl;
+            cout << "silahkan buat rekening anda dan isi dengan uang yang anda miliki dan tolong ketik nominalnya" << endl;
