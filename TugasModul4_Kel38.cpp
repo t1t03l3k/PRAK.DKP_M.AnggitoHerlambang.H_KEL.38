@@ -73,19 +73,19 @@ void masuk_akun1() {
             cout << "Ketik rekening yang ingin anda lihat : " << endl;
             cin >> rek;
             if (rek == "1") {
-                cout << "rekening 1 : " << duid[0] << endl;
+                cout << "rekening 1 : " << duid[1] << endl;
             }
             else if (rek == "2") {
-                cout << "rekening 2 : " << duid[1] << endl;
+                cout << "rekening 2 : " << duid[2] << endl;
             }
             else if (rek == "3") {
-                cout << "rekening 3 : " << duid[2] << endl;
+                cout << "rekening 3 : " << duid[3] << endl;
             }
             else if (rek == "4") {
-                cout << "rekening 4 : " << duid[3] << endl;
+                cout << "rekening 4 : " << duid[4] << endl;
             }
             else if (rek == "5") {
-                cout << "rekening 5 : " << duid[4] << endl;
+                cout << "rekening 5 : " << duid[5] << endl;
             }
             else if (rek == "semua") {
                 cout << "Total Tabungan Anda" << endl;
