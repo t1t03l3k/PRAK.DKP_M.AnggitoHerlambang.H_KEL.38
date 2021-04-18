@@ -2,6 +2,13 @@
 
 using namespace std;
 
+class MyClass {
+public:
+    void banner(string banner) {
+        cout << "===== Selamat Datang di Bank Uang SKADI =====" << endl;
+        cout << "======= Silahkan Login terlebih Dahulu ======" << endl;
+    }
+};
 void buat_akun() {
     string jawaban, rek, akun, pass, konfirmasi, jawaban2;
     int ngisiduid;
@@ -49,15 +56,18 @@ void masuk_akun1() {
     string akun, rek, pass;
 
     int duid[5];
-    duid[0] = 21500000;
-    duid[1] = 17200000;
-    duid[2] = 12350000;
-    duid[3] = 8660000;
-    duid[4] = 5210000;
+    duid[1] = 21500000;
+    duid[2] = 17200000;
+    duid[3] = 12350000;
+    duid[4] = 8660000;
+    duid[5] = 5210000;
+
+    login_akun:
     cout << "Account : ";
     cin >> akun;
     cout << "Password : ";
     cin >> pass;
+
     if (akun == "doctor123ler") {
         if (pass == "4yaka5kadi") {
             cout << "Ketik rekening yang ingin anda lihat : " << endl;
@@ -79,15 +89,16 @@ void masuk_akun1() {
             }
             else if (rek == "semua") {
                 cout << "Total Tabungan Anda" << endl;
-                cout << "rekening 1 : " << duid[0] << endl;
-                cout << "rekening 2 : " << duid[1] << endl;
-                cout << "rekening 3 : " << duid[2] << endl;
-                cout << "rekening 4 : " << duid[3] << endl;
-                cout << "rekening 5 : " << duid[4] << endl;
+                int i = 1;
+                while (i <= 5) {
+                    cout << "rekening " << i << " : " << duid[i] << endl;
+                    i++;
+                }      
             }
         }
         else {
             cout << "Password rekening anda salah, coba lagi!" << endl;
+            goto login_akun;
         }
     }
     else {
@@ -96,8 +107,8 @@ void masuk_akun1() {
 }
 void login() {
     string pass, akun;
-    cout << "===== Selamat Datang di Bank Uang SKADI =====" << endl;
-    cout << "======= Silahkan Login terlebih Dahulu ======" << endl;
+    MyClass myObj;
+    myObj.banner("banner");
     masuk_akun1();
 }
 void atm() {
