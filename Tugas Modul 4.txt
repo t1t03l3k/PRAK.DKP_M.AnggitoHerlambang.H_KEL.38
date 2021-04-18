@@ -77,3 +77,34 @@ void masuk_akun1() {
             else if (rek == "5") {
                 cout << "rekening 5 : " << duid[4] << endl;
             }
+                        else if (rek == "semua") {
+                cout << "Total Tabungan Anda" << endl;
+                cout << "rekening 1 : " << duid[0] << endl;
+                cout << "rekening 2 : " << duid[1] << endl;
+                cout << "rekening 3 : " << duid[2] << endl;
+                cout << "rekening 4 : " << duid[3] << endl;
+                cout << "rekening 5 : " << duid[4] << endl;
+            }
+        }
+        else {
+            cout << "Password rekening anda salah, coba lagi!" << endl;
+        }
+    }
+    else {
+        buat_akun();
+    }
+}
+void login() {
+    string pass, akun;
+    cout << "===== Selamat Datang di Bank Uang SKADI =====" << endl;
+    cout << "======= Silahkan Login terlebih Dahulu ======" << endl;
+    masuk_akun1();
+}
+void atm() {
+    login();
+}
+
+int main()
+{
+    atm();
+}
