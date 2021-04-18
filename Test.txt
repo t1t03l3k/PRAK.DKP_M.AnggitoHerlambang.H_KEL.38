@@ -19,3 +19,29 @@ void buat_akun() {
         if (konfirmasi == "iya") {
             cout << "====selamat akun anda telah terbuat====" << endl;
             cout << "silahkan buat rekening anda dan isi dengan uang yang anda miliki dan tolong ketik nominalnya" << endl;
+            cout << "======Buat Rekening======" << endl;
+            cin >> rek;
+            cout << "===Isi rekening dengan uang cash===" << endl;
+            cin >> ngisiduid;
+            cout << "Username anda adalah : " << akun << endl;
+            cout << "Password anda adalah : " << pass << endl;
+            cout << "Anda memiliki 1 rekening dengan nama " << rek << " dan berisi " << ngisiduid << " rupiah" << endl;
+            cout << "====Apakah anda tertarik dengan tawaran kami? ketik iya untuk melihat====" << endl;
+            cin >> jawaban2;
+            if (jawaban2 == "iya") {
+                for (int i = 1; i <= 5; i++) {
+                    cout << "Tawaran BANK SKADI " << i << endl;
+                }
+            }
+            else {
+                cout << "Silahkan Jelajahi Fitur-Fitur Kami Yang Lain" << endl;
+            }
+        }
+        else {
+            cout << "silahkan coba lagi" << endl;
+        }
+    }
+    else {
+        cout << "Silahkan keluar daru ruang ATM" << endl;
+    }
+}
