@@ -45,3 +45,35 @@ void buat_akun() {
         cout << "Silahkan keluar daru ruang ATM" << endl;
     }
 }
+void masuk_akun1() {
+    string akun, rek, pass;
+
+    int duid[5];
+    duid[0] = 21500000;
+    duid[1] = 17200000;
+    duid[2] = 12350000;
+    duid[3] = 8660000;
+    duid[4] = 5210000;
+    cout << "Account : ";
+    cin >> akun;
+    cout << "Password : ";
+    cin >> pass;
+    if (akun == "doctor123ler") {
+        if (pass == "4yaka5kadi") {
+            cout << "Ketik rekening yang ingin anda lihat : " << endl;
+            cin >> rek;
+            if (rek == "1") {
+                cout << "rekening 1 : " << duid[0] << endl;
+            }
+            else if (rek == "2") {
+                cout << "rekening 2 : " << duid[1] << endl;
+            }
+            else if (rek == "3") {
+                cout << "rekening 3 : " << duid[2] << endl;
+            }
+            else if (rek == "4") {
+                cout << "rekening 4 : " << duid[3] << endl;
+            }
+            else if (rek == "5") {
+                cout << "rekening 5 : " << duid[4] << endl;
+            }
